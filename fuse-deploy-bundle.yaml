@@ -1,6 +1,6 @@
 ---
 - name: Fuse Deploy Bundles Playbook
-  hosts: fuse-lab-environment
+  hosts: fuse-environment
   remote_user: root
   gather_facts: true
   become: yes

@@ -1,6 +1,6 @@
 ---
 - name: Fuse Standalone Playbook
-  hosts: fuse-lab-environment
+  hosts: fuse-environment
   serial: 2
   remote_user: root
   gather_facts: true

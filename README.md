@@ -184,7 +184,7 @@ To execute this playbook:
 
 Inventory (*host* file):
 
-		[fuse-lab-environment]
+		[fuse-environment]
 		rhel7jboss01
 		rhel7jboss02
 		rhel7jboss03
@@ -193,7 +193,7 @@ Playbook (*fuse-install.yaml* file):
 
 		---
 		- name: Fuse Standalone Playbook
-			hosts: fuse-lab-environment
+			hosts: fuse-environment
 			serial: 2
 			remote_user: cloud-user
 			gather_facts: true
@@ -244,7 +244,7 @@ To execute this playbook:
 
 Inventory (*host* file):
 
-		[fuse-lab-environment]
+		[fuse-environment]
 		rhel7jboss01
 		rhel7jboss02
 		rhel7jboss03
@@ -253,7 +253,7 @@ Playbook (*fuse-undeploy-bundle.yaml* file):
 
 		---
 		- name: Uninstall Playbook of a Fuse Standalone Environment
-		  hosts: fuse-lab-environment
+		  hosts: fuse-environment
 		  remote_user: cloud-user
 		  gather_facts: true
 		  become: yes
@@ -352,7 +352,7 @@ To execute this playbook:
 
 Inventory (*host* file):
 
-		[fuse-lab-environment]
+		[fuse-environment]
 		rhel7jboss01
 		rhel7jboss02
 		rhel7jboss03
@@ -361,7 +361,7 @@ Playbook (*fuse-deploy-bundle.yaml* file):
 
 		---
 		- name: Fuse Deploy Bundles Playbook
-			hosts: fuse-lab-environment
+			hosts: fuse-environment
 			serial: 2
 			remote_user: cloud-user
 			gather_facts: true
@@ -458,7 +458,7 @@ To execute this playbook:
 
 Inventory (*host* file):
 
-		[fuse-lab-environment]
+		[fuse-environment]
 		rhel7jboss01
 		rhel7jboss02
 		rhel7jboss03
@@ -467,7 +467,7 @@ Playbook (*fuse-undeploy-bundle.yaml* file):
 
 		---
 		- name: Fuse Undeploy Bundles Playbook
-			hosts: fuse-lab-environment
+			hosts: fuse-environment
 			serial: 2
 			remote_user: cloud-user
 			gather_facts: true
@@ -527,7 +527,7 @@ To execute this playbook:
 
 Inventory (*host* file):
 
-		[fuse-lab-environment]
+		[fuse-environment]
 		rhel7jboss01
 		rhel7jboss02
 		rhel7jboss03
@@ -536,7 +536,7 @@ Playbook (*fuse-patch.yaml* file):
 
 		---
 		- name: Patch Playbook of a Fuse Standalone Environment
-			hosts: fuse-lab-environment
+			hosts: fuse-environment
 			serial: 2
 			remote_user: cloud-user
 			gather_facts: true
