@@ -13,15 +13,15 @@
         role: fuse-install,
         esb_name: 'esb01',
         port_offset: '0',
-        nob: 'true',
-        amq_master_slave: 'true'
+        nob: 'false',
+        amq_master_slave: 'false'
       }
     - {
         role: fuse-install,
         esb_name: 'esb02',
         port_offset: '100',
-        nob: 'true',
-        amq_master_slave: 'true'
+        nob: 'false',
+        amq_master_slave: 'false'
       }
     #- {
     #    role: fuse-install,
