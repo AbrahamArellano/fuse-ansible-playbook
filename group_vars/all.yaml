@@ -6,8 +6,8 @@ binary:
 # Fuse Version and Patch
 fuse:
   version: '6.3.0'
-  patch: '262'
-  maven_version: '630262'
+  patch: '356'
+  maven_version: '630356'
 
 # Patch Fuse Version and Patch
 fuse_patch:
