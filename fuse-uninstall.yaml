@@ -8,4 +8,4 @@
   become_method: sudo
   roles:
     - { role: fuse-uninstall, esb_name: 'esb01' }
-    - { role: fuse-uninstall, esb_name: 'esb02' }
+    #- { role: fuse-uninstall, esb_name: 'esb02' }
