@@ -9,11 +9,11 @@
   connection: local
   
   serial: 2
-  remote_user: root
+  remote_user: fuse
   gather_facts: true
   become: yes
-  become_user: root
-  become_method: sudo
+  become_user: fuse
+  become_method: su
   roles:
     # Two Fuse Standalone with a Network of Brokers
     - {

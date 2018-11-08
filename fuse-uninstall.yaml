@@ -8,11 +8,11 @@
   hosts: 127.0.0.1
   connection: local
   
-  remote_user: root
+  remote_user: fuse
   gather_facts: true
   become: yes
-  become_user: root
-  become_method: sudo
+  become_user: fuse
+  become_method: su
   roles:
     - { role: fuse-uninstall, esb_name: 'esb01' }
     #- { role: fuse-uninstall, esb_name: 'esb02' }

@@ -40,12 +40,26 @@
     owner: "{{ user['name'] }}"
     group: "{{ user['name'] }}"
 
-- name: Install systemd unit file
-  template:
-    src: fuse.service.j2
-    dest: /etc/systemd/system/fuse-{{ esb_name }}.service
-    owner: root
-    mode: 644
-  notify:
-    - reload systemd
-    - restart fuse-{{ esb_name }}
+- block:
+  - name: Start Fuse service
+    shell: "{{ fuse_home }}/bin/start"
+    environment:
+      BASH_ENV: "~/.profile"
+    args:
+      executable: "/bin/bash"
+      warn: yes
+    become: yes
+    become_user: fuse
+    changed_when: true
+    async: 60
+    poll: 0
+
+#- name: Install systemd unit file
+#  template:
+#    src: fuse.service.j2
+#    dest: /etc/systemd/system/fuse-{{ esb_name }}.service
+#    owner: root
+#    mode: 644
+#  notify:
+#    - reload systemd
+#    - restart fuse-{{ esb_name }}

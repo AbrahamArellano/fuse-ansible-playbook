@@ -1,16 +1,16 @@
 ---
-- name: Grant RHEL and Fuse repos enabled
+#- name: Grant RHEL and Fuse repos enabled
 
   # server repository 
   # shell: subscription-manager repos --enable=rhel-7-server-rpms
 
   # workstation repository
-  shell: subscription-manager repos --enable=rhel-7-workstation-rpms
+  # shell: subscription-manager repos --enable=rhel-7-workstation-rpms
 
-  register: repo_enabled
+  # register: repo_enabled
   # failed_when: "repo_enabled.rc != 0"
-  ignore_errors: yes
-  when: ansible_os_family == "RedHat"
+  # ignore_errors: yes
+  # when: ansible_os_family == "RedHat"
 
 - name: Create user for Fuse
   user:
