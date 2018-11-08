@@ -1,6 +1,12 @@
 ---
 - name: Grant RHEL and Fuse repos enabled
-  shell: subscription-manager repos --enable=rhel-7-server-rpms
+
+  # server repository 
+  # shell: subscription-manager repos --enable=rhel-7-server-rpms
+
+  # workstation repository
+  shell: subscription-manager repos --enable=rhel-7-workstation-rpms
+
   register: repo_enabled
   # failed_when: "repo_enabled.rc != 0"
   ignore_errors: yes
