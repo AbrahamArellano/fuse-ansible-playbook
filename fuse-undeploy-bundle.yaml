@@ -9,4 +9,4 @@
   roles:
     # Undeploying Bundles in Two Fuse Standalone
     - { role: fuse-undeploy-bundle, esb_name: 'esb01' }
-    - { role: fuse-undeploy-bundle, esb_name: 'esb02' }
+#    - { role: fuse-undeploy-bundle, esb_name: 'esb02' }
