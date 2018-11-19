@@ -28,6 +28,8 @@
     - vim
     - git
 
+## Create bash profile - read write access
+
 - name: Set JAVA_HOME for Fuse user
   become_user: "{{ user['name'] }}"
   lineinfile:

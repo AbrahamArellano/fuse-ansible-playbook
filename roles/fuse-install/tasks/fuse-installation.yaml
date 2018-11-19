@@ -44,7 +44,7 @@
   - name: Start Fuse service
     shell: "{{ fuse_home }}/bin/start"
     environment:
-      BASH_ENV: "~/.profile"
+      BASH_ENV: "~/.bash_profile"
     args:
       executable: "/bin/bash"
       warn: yes
